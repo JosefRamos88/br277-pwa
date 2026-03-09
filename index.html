@@ -1,39 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BR277</title>
 
-<title>BR277</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon192.png">
+  <link rel="apple-touch-icon" href="icon192.png">
 
-<link rel="manifest" href="manifest.json">
-<link rel="icon" type="image/png" sizes="192x192" href="icon192.png">
-<link rel="apple-touch-icon" href="icon192.png">
+  <meta name="theme-color" content="#111827">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
-<meta name="theme-color" content="#111827">
-<meta name="apple-mobile-web-app-capable" content="yes">
+  <style>
+    html, body{
+      margin:0;
+      width:100%;
+      height:100%;
+      background:#111827;
+      font-family:Arial, sans-serif;
+    }
 
-<style>
-body{
-margin:0;
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#111827;
-color:white;
-font-family:Arial, sans-serif;
-font-size:22px;
-}
-</style>
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+    }
 
-<script>
-window.location.replace("https://script.google.com/macros/s/AKfycbwWWNGBqSONU5XFoAMBEaxowVbBAZIWkwrNyXJKrE8eNGUvP1P7ry1XyKiabSHMej0-KA/exec");
-</script>
+    .splash{
+      width:100%;
+      max-width:420px;
+      padding:24px;
+      text-align:center;
+      box-sizing:border-box;
+    }
 
+    .logo{
+      width:110px;
+      height:110px;
+      object-fit:contain;
+      margin-bottom:18px;
+      animation:pulse 1.4s infinite ease-in-out;
+    }
+
+    .title{
+      font-size:30px;
+      font-weight:900;
+      margin-bottom:10px;
+      letter-spacing:0.5px;
+    }
+
+    .sub{
+      font-size:18px;
+      opacity:.9;
+    }
+
+    @keyframes pulse{
+      0%{ transform:scale(1); opacity:1; }
+      50%{ transform:scale(1.05); opacity:.88; }
+      100%{ transform:scale(1); opacity:1; }
+    }
+  </style>
+
+  <script>
+    setTimeout(function(){
+      window.location.replace("https://script.google.com/macros/s/AKfycbwWWNGBqSONU5XFoAMBEaxowVbBAZIWkwrNyXJKrE8eNGUvP1P7ry1XyKiabSHMej0-KA/exec");
+    }, 700);
+  </script>
 </head>
-
 <body>
-Carregando BR277...
+  <div class="splash">
+    <img src="icon192.png" alt="BR277" class="logo">
+    <div class="title">BR277</div>
+    <div class="sub">Carregando sistema...</div>
+  </div>
 </body>
 </html>
