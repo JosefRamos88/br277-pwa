@@ -1,9 +1,9 @@
 {
   "name": "Brothers Riders 277",
   "short_name": "BR277",
-  "start_url": "https://script.google.com",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#111827",
   "theme_color": "#111827",
   "icons": [
     {
